@@ -56,14 +56,14 @@ export class AboutSiteComponent {
   }
 
   skill: Skill[] = [
-    { skillname: 'Angular', img: '../../../assets/skills/Angular.png' },
-    { skillname: 'TypeScript', img: '../../../assets/skills/typescript.png' },
-    { skillname: 'RxJS', img: '../../../assets/skills/rxjs.png' },
-    { skillname: 'HTML', img: '../../../assets/skills/html.png' },
-    { skillname: 'Tailwind CSS', img: '../../../assets/skills/tailwind css.png' },
-    { skillname: 'Material UI', img: '../../../assets/skills/material ui.png' },
-    { skillname: 'Git', img: '../../../assets/skills/git.png' },
-    { skillname: 'Github', img: '../../../assets/skills/github.png' }
+    { skillname: 'Angular', img: 'assets/skills/Angular.png' },
+    { skillname: 'TypeScript', img: 'assets/skills/typescript.png' },
+    { skillname: 'RxJS', img: 'assets/skills/rxjs.png' },
+    { skillname: 'HTML', img: 'assets/skills/html.png' },
+    { skillname: 'Tailwind CSS', img: 'assets/skills/tailwind css.png' },
+    { skillname: 'Material UI', img: 'assets/skills/material ui.png' },
+    { skillname: 'Git', img: 'assets/skills/git.png' },
+    { skillname: 'Github', img: 'assets/skills/github.png' }
   ]
 
   details : Details[] = [
