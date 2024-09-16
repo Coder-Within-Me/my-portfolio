@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Skill } from '../skills/skills.component';
 import { CommonModule } from '@angular/common';
 import { interval, map, Observable, take } from 'rxjs';
+import { Skill } from '../details/about/about.component';
 
 interface Project{
   projectName : string;

@@ -24,8 +24,8 @@ export class ToolsUsedComponent implements OnInit {
     { toolname: 'Soup UI', img: 'assets/tools/soup ui.png' },
     { toolname: 'MS Azure Portal', img: 'assets/skills/azure.png' },
     { toolname: 'Azure DevOps Portal', img: 'assets/tools/Azure Devops.png' },
-    { toolname: 'Github', img: 'assets/skills/github.png' },
-    { toolname: 'Docker', img: 'assets/tools/docker.png' },
+    { toolname: 'Github portal', img: 'assets/skills/github.png' },
+    { toolname: 'Docker Desktop', img: 'assets/tools/docker.png' },
   ];
 
   tools: tool[] = [];

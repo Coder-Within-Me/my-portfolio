@@ -2,8 +2,8 @@ import { Component, inject, signal } from '@angular/core';
 import { StylingService } from '../../service/styling.service';
 import { CommonModule } from '@angular/common';
 import { DateDiffCalculatorService } from '../../service/date-diff-calculator.service';
-import { Skill } from '../skills/skills.component';
 import { interval, map, Observable, take } from 'rxjs';
+import { Skill } from '../details/about/about.component';
 
 interface Details{
   title : string;

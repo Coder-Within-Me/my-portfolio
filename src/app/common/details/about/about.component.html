@@ -1,7 +1,7 @@
 <div class="p-1.5 mt-4 mb-1 ml-1 mr-1 bg-white shadow-md animate-slideIn-1 900px:p-3 m-6">
     <div class="flex flex-col w-full">
         <div class="w-full">
-          <button  (mouseover)="changeColor()" class="group animate-scale-wave delay-6 p-1 relative bg-transparent inline-flex items-center w-full bg-white text-black font-medium transition-all duration-200 ease-out hover:bg-transparent hover:shadow-none hover:border-none focus:outline-none 900px:p-4">
+          <button  (mouseover)="changeColor()" class="group animate-scale-wave delay-6 p-1 relative bg-transparent inline-flex items-center w-full bg-white text-black font-medium transition-all duration-200 ease-out hover:bg-transparent hover:shadow-none hover:border-none focus:outline-none 900px:p-4 cursor-default">
             <div class="text-left tracking-[0.2em] text-xl md:text-3xl font-bold m-2 uppercase animate-slideIn-2">
               about
             </div>
@@ -26,14 +26,14 @@
             where we delivered specialized services to the manufacturing and supply chain (MFSC) sector, serving clients such as <a href="https://www.emerson.com/en-us/global" target="_blank" class="underline decoration-dotted underline-offset-2 decoration-1 hover:text-blue-700"> Emerson</a>. During my tenure at SLK, I gained valuable experience in team building, people management, cultivating organizational culture, and fostering client relationships.
             My current position at IMRIEL has further honed my technical expertise and supported my professional development.
           </div>
-          <div class="text-left tracking-[0.17em] text-base md:text-sm font-bold uppercase my-2 animate-slideIn-4 900px:my-4">
+          <div class="text-left tracking-[0.17em] text-base md:text-sm font-bold uppercase mb-2 mt-2 animate-slideIn-4 900px:mb-4 mt-4">
             Education
           </div>
-          <div class="flex items-center justify-center bg-white p-2 px-6 900px:px-20 animate-slideIn-2">
+          <div class="flex items-center justify-center bg-white px-6 900px:px-20 p-2 animate-slideIn-2 900px:p-4">
             <div class="space-y-6 border-l-2 border-dashed">
               <div class="relative w-full animate-slideIn-3">
-                <fa-icon [icon]="faCheckCircle" class="absolute -top-3 z-10 -ml-3.5 h-4 w-4 text-blue-500"></fa-icon>
-                <div class="ml-6 animate-slideIn-4">
+                <fa-icon [icon]="faCheckCircle" class="absolute -top-1.5 900px:-top-2 z-10 -ml-3 900px:-ml-3.5 h-4 w-4 text-blue-500"></fa-icon>
+                <div class="ml-5 900px:ml-6 animate-slideIn-4">
                   <h4 class="font-bold text-blue-500 animate-slideIn-5">Bachelor Of Engineering</h4>
                   <h3 class="font-bold text-gray-600 animate-slideIn-6">Annasaheb Dange College of Engineering and Technology</h3>
                   <p class="mt-2 max-w-screen-sm text-sm text-gray-500 animate-slideIn-7">Ashta, Sangli, Maharashtra, India</p>
@@ -41,8 +41,8 @@
                 </div>
               </div>
               <div class="relative w-full animate-slideIn-3">
-                <fa-icon [icon]="faCheckCircle" class="absolute -top-3 z-10 -ml-3.5 h-4 w-4 text-blue-500"></fa-icon>
-                <div class="ml-6 animate-slideIn-4">
+                <fa-icon [icon]="faCheckCircle" class="absolute -top-1.5 900px:-top-2 z-10 -ml-3 900px:-ml-3.5 h-4 w-4 text-blue-500"></fa-icon>
+                <div class="ml-5 900px:ml-6 animate-slideIn-4">
                   <h4 class="font-bold text-blue-500 animate-slideIn-5">Higher Secondary School (HSC)</h4>
                   <h3 class="font-bold text-gray-600 animate-slideIn-6">Shri Parashar Jr College Of Science</h3>
                   <p class="mt-2 max-w-screen-sm text-sm text-gray-500 animate-slideIn-7">Pargaon, Kolhapur, Maharashtra, India</p>
@@ -50,8 +50,8 @@
                 </div>
               </div>
               <div class="relative w-full animate-slideIn-3">
-                <fa-icon [icon]="faCheckCircle" class="absolute -top-3 z-10 -ml-3.5 h-4 w-4 text-blue-500"></fa-icon>
-                <div class="ml-6 animate-slideIn-4">
+                <fa-icon [icon]="faCheckCircle" class="absolute -top-1.5 900px:-top-2 z-10 -ml-3 900px:-ml-3.5 h-4 w-4 text-blue-500"></fa-icon>
+                <div class="ml-5 900px:ml-6 animate-slideIn-4">
                   <h4 class="font-bold text-blue-500 animate-slideIn-5">Secondary School Certificate (SSC)</h4>
                   <h3 class="font-bold text-gray-600 animate-slideIn-6">Kini Highschool Kini</h3>
                   <p class="mt-2 max-w-screen-sm text-sm text-gray-500 animate-slideIn-7">Kini, Kolhapur, Maharashtra, India</p>
@@ -61,10 +61,12 @@
             </div>
           </div>
         </div>
-        <div class="text-left tracking-[0.17em] text-base md:text-sm font-bold uppercase animate-slideIn-4">
-          skills :
+        <div *ngFor="let skillTitle of skillTitles">
+          <div class="text-left tracking-[0.17em] text-base md:text-sm font-bold uppercase animate-slideIn-4">
+            {{ skillTitle }} :
+          </div>
+          <app-skills [skill]="getSkillsByTitle(skillTitle)"></app-skills>
         </div>
-        <app-skills></app-skills>
         <div class="text-left tracking-[0.17em] text-base mt-2 md:text-sm font-bold uppercase animate-slideIn-4 900px:mt-4">
           Tools used:
         </div>

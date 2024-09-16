@@ -1,7 +1,7 @@
 <div class="p-4 pl-4 pr-4 900px:pl-12 pr-24">
     <div class="flex flex-wrap justify-center gap-1">
         <div *ngFor="let tool of tools">
-            <div class="flex items-center justify-center flex-col border border-sky-200 bg-white rounded-lg h-16 px-4 900px:h-20 900px:px-8 hover:border-blue-500 border-2">
+            <div class="flex items-center justify-center flex-col border-2 border-sky-200 bg-white rounded-lg h-16 px-4 900px:h-20 900px:px-8">
                 <img [src] = "tool.img" [alt]="tool.toolname" class="w-8 h-8 900px:w-10 900px:h-10">
                 <span class="text-xs 900px:p-1 pl-2 font-semibold">{{tool.toolname}}</span>
               </div>
