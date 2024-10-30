@@ -25,6 +25,8 @@ export class ProfileDetailsComponent {
 
   currentColor: string = 'border-black';
   currentAnimationColor: string = 'bg-yellow-400';
+  private isDownloading = false;
+  private debounceTime = 1000;
 
   changeColor() {
     this.currentColor = this.stylingService.getRandomBorderColor();
@@ -40,8 +42,19 @@ export class ProfileDetailsComponent {
   }
 
   downloadCV(){
-    //not implemented
-    this.snackBar.open('Better you contact me.','Enjoy !',{ horizontalPosition : 'right', verticalPosition : 'top', duration : 3000});
+    if (this.isDownloading) return;
+
+    this.isDownloading = true;
+    const link = document.createElement('a');
+    link.href = 'assets/Mayur Gurav Resume.pdf';
+    link.download = 'Mayur Gurav Resume.pdf';
+    link.click();
+
+    this.snackBar.open('Downloaded ..!','Enjoy !',{ horizontalPosition : 'right', verticalPosition : 'top', duration : 3000});
+
+    setTimeout(() => {
+      this.isDownloading = false;
+    }, this.debounceTime); 
   }
 
   navigateToPersonal(){
