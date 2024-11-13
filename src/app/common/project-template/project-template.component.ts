@@ -20,63 +20,6 @@ export class ProjectTemplateComponent {
 
   project: Project[] = [
     {
-      projectName: 'Deal Management System (DMS)',
-      description: 'This DMS application enables users to efficiently create agreements and deals for orderable products.',
-      skills: [
-        { skillname: '.Net MVC', img: 'assets/skills/Visual Studio.png' },
-        { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
-        { skillname: 'ADO.Net', img: 'assets/skills/visual-studio.png' },
-        { skillname: 'JavaScript', img: 'assets/skills/js-file.png' },
-        { skillname: 'jQuery', img: 'assets/skills/jQuery.png' },
-        { skillname: 'MS SQL', img: 'assets/skills/database.png' },
-        { skillname: 'TFS', img: 'assets/skills/Visual Studio.png' }
-      ]
-    },
-    {
-      projectName: 'Request To Quote (RTQ)',
-      description: 'RTQ is a tool designed to streamline the approval process for specific quotes and orders. It facilitates special approvals and efficiently manages data transfers to other applications.',
-      skills: [
-        { skillname: '.Net MVC', img: 'assets/skills/Visual Studio.png' },
-        { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
-        { skillname: 'ADO.Net', img: 'assets/skills/visual-studio.png' },
-        { skillname: 'JavaScript', img: 'assets/skills/js-file.png' },
-        { skillname: 'MS SQL', img: 'assets/skills/database.png' },
-        { skillname: '.Net Core Web API', img: 'assets/skills/visual-studio.png' },
-        { skillname: 'jQuery', img: 'assets/skills/jQuery.png' },
-        { skillname: 'TFS', img: 'assets/skills/Visual Studio.png' }
-      ]
-    },
-    {
-      projectName: 'Telerik Reporting',
-      description: 'This web application streamlines the creation, management, validation, and formatting of custom reports, greatly accelerating the entire reporting process.',
-      skills: [
-        { skillname: 'Telerik', img: 'assets/skills/telerik.png' },
-        { skillname: 'HTML', img: 'assets/skills/html.png' },
-        { skillname: 'CSS', img: 'assets/skills/css.png' },
-        { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
-        { skillname: '.Net Core Web API', img: 'assets/skills/visual-studio.png' },
-        { skillname: 'ADO.Net', img: 'assets/skills/visual-studio.png' },
-        { skillname: 'MS SQL', img: 'assets/skills/database.png' },
-        { skillname: 'Git', img: 'assets/skills/git.png' },
-        { skillname: 'Azure DevOps', img: 'assets/tools/Azure Devops.png' }
-      ]
-    },
-    {
-      projectName: 'MLP Automation',
-      description: 'This tool significantly reduces the time and effort required for developers to validate data, create SQL queries, and maintain documentation, transforming tasks that previously took weeks into processes that can be completed in just a few minutes.',
-      skills: [
-        { skillname: 'Windows Forms', img: 'assets/skills/forms.png' },
-        { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
-        { skillname: '.Net MVC', img: 'assets/skills/Visual Studio.png' },
-        { skillname: 'JavaScript', img: 'assets/skills/js-file.png' },
-        { skillname: 'Entity Framework', img: 'assets/skills/EF.png' },
-        { skillname: 'LinQ', img: 'assets/skills/linq.png' },
-        { skillname: 'Open XML', img: 'assets/skills/xml.png' },
-        { skillname: 'Git', img: 'assets/skills/git.png' },
-        { skillname: 'Azure DevOps', img: 'assets/tools/Azure Devops.png' }
-      ]
-    },
-    {
       projectName: ' State Income Tax (SIT)',
       description: 'This system is designed for US tax calculations, enabling efficient tax management and generating detailed reports.',
       skills: [
@@ -110,6 +53,63 @@ export class ProjectTemplateComponent {
         { skillname: 'Microsoft Azure', img: 'assets/skills/azure.png' },
         { skillname: 'Git', img: 'assets/skills/git.png' },
         { skillname: 'Azure DevOps', img: 'assets/tools/Azure Devops.png' }
+      ]
+    },
+    {
+      projectName: 'Telerik Reporting',
+      description: 'This web application streamlines the creation, management, validation, and formatting of custom reports, greatly accelerating the entire reporting process.',
+      skills: [
+        { skillname: 'Telerik', img: 'assets/skills/telerik.png' },
+        { skillname: 'HTML', img: 'assets/skills/html.png' },
+        { skillname: 'CSS', img: 'assets/skills/css.png' },
+        { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
+        { skillname: '.Net Core Web API', img: 'assets/skills/visual-studio.png' },
+        { skillname: 'ADO.Net', img: 'assets/skills/visual-studio.png' },
+        { skillname: 'MS SQL', img: 'assets/skills/database.png' },
+        { skillname: 'Git', img: 'assets/skills/git.png' },
+        { skillname: 'Azure DevOps', img: 'assets/tools/Azure Devops.png' }
+      ]
+    },
+    {
+      projectName: 'MLP Automation',
+      description: 'This tool significantly reduces the time and effort required for developers to validate data, create SQL queries, and maintain documentation, transforming tasks that previously took weeks into processes that can be completed in just a few minutes.',
+      skills: [
+        { skillname: 'Windows Forms', img: 'assets/skills/forms.png' },
+        { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
+        { skillname: '.Net MVC', img: 'assets/skills/Visual Studio.png' },
+        { skillname: 'JavaScript', img: 'assets/skills/js-file.png' },
+        { skillname: 'Entity Framework', img: 'assets/skills/EF.png' },
+        { skillname: 'LinQ', img: 'assets/skills/linq.png' },
+        { skillname: 'Open XML', img: 'assets/skills/xml.png' },
+        { skillname: 'Git', img: 'assets/skills/git.png' },
+        { skillname: 'Azure DevOps', img: 'assets/tools/Azure Devops.png' }
+      ]
+    },
+    {
+      projectName: 'Deal Management System (DMS)',
+      description: 'This DMS application enables users to efficiently create agreements and deals for orderable products.',
+      skills: [
+        { skillname: '.Net MVC', img: 'assets/skills/Visual Studio.png' },
+        { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
+        { skillname: 'ADO.Net', img: 'assets/skills/visual-studio.png' },
+        { skillname: 'JavaScript', img: 'assets/skills/js-file.png' },
+        { skillname: 'jQuery', img: 'assets/skills/jQuery.png' },
+        { skillname: 'MS SQL', img: 'assets/skills/database.png' },
+        { skillname: 'TFS', img: 'assets/skills/Visual Studio.png' }
+      ]
+    },
+    {
+      projectName: 'Request To Quote (RTQ)',
+      description: 'RTQ is a tool designed to streamline the approval process for specific quotes and orders. It facilitates special approvals and efficiently manages data transfers to other applications.',
+      skills: [
+        { skillname: '.Net MVC', img: 'assets/skills/Visual Studio.png' },
+        { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
+        { skillname: 'ADO.Net', img: 'assets/skills/visual-studio.png' },
+        { skillname: 'JavaScript', img: 'assets/skills/js-file.png' },
+        { skillname: 'MS SQL', img: 'assets/skills/database.png' },
+        { skillname: '.Net Core Web API', img: 'assets/skills/visual-studio.png' },
+        { skillname: 'jQuery', img: 'assets/skills/jQuery.png' },
+        { skillname: 'TFS', img: 'assets/skills/Visual Studio.png' }
       ]
     },
     {
