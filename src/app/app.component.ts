@@ -31,9 +31,21 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.router.events
-      .pipe(filter(event => event instanceof NavigationEnd))
-      .subscribe(() => {
+      .pipe(
+        filter((event) => event instanceof NavigationEnd)
+      )
+      .subscribe((event) => {
+        const navigationEndEvent = event as NavigationEnd;
         this.updateTitleBasedOnRoute();
+
+        // Track the page view in Google Analytics (ensure gtag is defined)
+        if (typeof gtag === 'function') {
+          gtag('config', 'YOUR_TRACKING_ID', {
+            page_path: navigationEndEvent.urlAfterRedirects,
+          });
+        } else {
+          console.error('Google Analytics gtag is not available');
+        }
       });
   }
 
