@@ -69,7 +69,7 @@ export class AboutSiteComponent {
   details : Details[] = [
     { title: 'My Age', data: '1 month' },
     { title: 'My Experience', data: '1 month' },
-    { title: 'Last Updated', data: '02 Sep 2024' }
+    { title: 'Last Updated', data: '15 Jun 2025' }
   ];
 
   ngOnInit(): void {

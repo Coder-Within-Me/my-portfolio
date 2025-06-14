@@ -1,3 +1,6 @@
+.subtle-highlight {
+  @apply text-black/70 font-semibold;
+}
 
 @keyframes slideIn {
     from {

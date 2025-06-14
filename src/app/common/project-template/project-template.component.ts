@@ -20,7 +20,22 @@ export class ProjectTemplateComponent {
 
   project: Project[] = [
     {
-      projectName: ' State Income Tax (SIT)',
+      projectName: 'GRACE',
+      description: 'This project is designed to manage cases and their clients, handle billing rates, and facilitate data transfer between different applications.',
+      skills: [
+        { skillname: 'Angular', img: 'assets/skills/Angular.png' },
+        { skillname: 'TypeScript', img: 'assets/skills/typescript.png' },
+        { skillname: 'RxJS', img: 'assets/skills/rxjs.png' },
+        { skillname: 'C#', img: 'assets/skills/c-sharp.png' },
+        { skillname: '.Net Core Web API', img: 'assets/skills/visual-studio.png' },
+        { skillname: 'MS SQL', img: 'assets/skills/database.png' },
+        { skillname: 'Microsoft Azure', img: 'assets/skills/azure.png' },
+        { skillname: 'Git', img: 'assets/skills/git.png' },
+        { skillname: 'Github', img: 'assets/skills/github.png' }
+      ]
+    },
+    {
+      projectName: 'State Income Tax (SIT)',
       description: 'This system is designed for US tax calculations, enabling efficient tax management and generating detailed reports.',
       skills: [
         { skillname: 'Angular', img: 'assets/skills/Angular.png' },
